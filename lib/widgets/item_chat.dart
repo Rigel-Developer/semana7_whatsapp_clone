@@ -20,7 +20,7 @@ class ItemChatWidget extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const ChatDetailPage()),
+            MaterialPageRoute(builder: (context) => ChatDetailPage()),
           );
         },
         leading: CircleAvatar(

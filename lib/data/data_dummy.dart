@@ -1,3 +1,5 @@
+import 'package:semana7_whatsapp_clone/models/chat_message.dart';
+
 import '../models/chat.dart';
 
 List<ChatModel> chats = [
@@ -57,25 +59,77 @@ List<ChatModel> chats = [
   ),
 ];
 
-// List<ChatMessageModel> chatsMessageList = [
-//   ChatMessageModel(
-//     messageContent: "Hola, Juan, cómo estas?",
-//     messageType: "other",
-//   ),
-//   ChatMessageModel(
-//     messageContent: "Holaa, estoy muy bien, ando aprendiendo Flutter?",
-//     messageType: "me",
-//   ),
-//   ChatMessageModel(
-//     messageContent: "Y tú qué haces?",
-//     messageType: "me",
-//   ),
-//   ChatMessageModel(
-//     messageContent: "Estoy revisando unas cosas",
-//     messageType: "other",
-//   ),
-//   ChatMessageModel(
-//     messageContent: "Creo que terminaré en un rato",
-//     messageType: "other",
-//   ),
-// ];
+List<ChatMessageModel> chatsMessageList = [
+  ChatMessageModel(
+    messageContent: "Hola, Juan, cómo estas?",
+    messageType: "other",
+  ),
+  ChatMessageModel(
+    messageContent: "Holaa, estoy muy bien, ando aprendiendo Flutter?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Estoy revisando unas cosas",
+    messageType: "other",
+  ),
+  ChatMessageModel(
+    messageContent: "Creo que terminaré en un rato",
+    messageType: "other",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Y tú qué haces?",
+    messageType: "me",
+  ),
+  ChatMessageModel(
+    messageContent: "Estoy revisando unas cosas",
+    messageType: "other",
+  ),
+  ChatMessageModel(
+    messageContent: "Creo que terminaré en un rato",
+    messageType: "other",
+  ),
+];

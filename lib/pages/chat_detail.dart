@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:semana7_whatsapp_clone/data/data_dummy.dart';
+import 'package:semana7_whatsapp_clone/models/chat_message.dart';
+import 'package:semana7_whatsapp_clone/widgets/chat_message.dart';
 
-class ChatDetailPage extends StatelessWidget {
+class ChatDetailPage extends StatefulWidget {
   const ChatDetailPage({super.key});
+
+  @override
+  State<ChatDetailPage> createState() => _ChatDetailPageState();
+}
+
+class _ChatDetailPageState extends State<ChatDetailPage> {
+  final TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +67,14 @@ class ChatDetailPage extends StatelessWidget {
             color: Colors.black.withOpacity(0.07),
           ),
           //Listado de mensajes
+          ListView.builder(
+            itemCount: chatsMessageList.length,
+            itemBuilder: (context, index) {
+              return ChatMessageWidget(
+                message: chatsMessageList[index],
+              );
+            },
+          ),
 
           //Input del nuevo mensaje
           Align(
@@ -69,6 +87,7 @@ class ChatDetailPage extends StatelessWidget {
               child: Row(children: [
                 Expanded(
                   child: TextField(
+                    controller: _controller,
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
@@ -113,7 +132,14 @@ class ChatDetailPage extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    print('Send message');
+                    chatsMessageList.add(
+                      ChatMessageModel(
+                        messageContent: _controller.text,
+                        messageType: "me",
+                      ),
+                    );
+                    _controller.clear();
+                    setState(() {});
                   },
                   child: Container(
                     padding: const EdgeInsets.all(13),

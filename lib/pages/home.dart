@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:semana7_whatsapp_clone/pages/call.dart';
 import 'package:semana7_whatsapp_clone/pages/chat.dart';
+import 'package:semana7_whatsapp_clone/pages/status.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -73,16 +75,16 @@ class _HomePageState extends State<HomePage>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: const [
-          Center(
+        children: [
+          const Center(
             child: Text('Camera'),
           ),
-          ChatPage(),
+          const ChatPage(),
           Center(
-            child: Text('Status'),
+            child: StatusPage(),
           ),
-          Center(
-            child: Text('Calls'),
+          const Center(
+            child: CallPage(),
           ),
         ],
       ),
